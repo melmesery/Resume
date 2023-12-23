@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${font.className} bg-slate-900 text-white tracking-wide`}>{children}</body>
+      <body className={`${font.className} bg-slate-100 text-black tracking-wide`}>{children}</body>
     </html>
   )
 }

@@ -10,11 +10,11 @@ import {
 export default function Home() {
   return (
     <div className="max-w-[90%] sm:max-w-[60%] mx-auto py-5 sm:py-10">
-      <h1 className="w-fit mx-auto text-base sm:text-2xl bg-slate-700 mb-3 sm:mb-5 font-bold">Portfolio Projects Sources</h1>
+      <h1 className="w-fit mx-auto text-base sm:text-2xl bg-slate-200 px-2 rounded-full mb-3 sm:mb-5 font-bold">Portfolio Projects Sources</h1>
       <p className="text-slate-400 font-bold mb-3">For any needed authentication, Please use these credentials to login:</p>
-      <div className="border-l-8 border-slate-700 p-1 sm:p-3">
-        <p className="mb-1 text-xs sm:text-base">Email: mohamed1elmesery@gmail.com</p>
-        <p className="mb-1 text-xs sm:text-base">Password: Mm_20130521</p>
+      <div className="border-l-8 border-slate-300 p-1 sm:p-3 font-bold">
+        <p className="mb-1 text-sm sm:text-base">Email: mohamed1elmesery@gmail.com</p>
+        <p className="mb-1 text-sm sm:text-base">Password: Mm_20130521</p>
       </div>
 
       <Project />
