@@ -33,7 +33,7 @@ export default async function Project() {
               {github && <Link href={github} target="_blank" className="border border-slate-300 hover:rounded-xl hover:bg-slate-300 px-2 sm:px-4">Github</Link>}
               {client && <Link href={client} target="_blank" className="border border-slate-300 hover:rounded-xl hover:bg-slate-300 px-2 sm:px-4">Client</Link>}
               {server && <Link href={server} target="_blank" className="border border-slate-300 hover:rounded-xl hover:bg-slate-300 px-2 sm:px-4">Server</Link>}
-              {video && <Link href={video} target="_blank" className="border border-slate-300 hover:rounded-xl hover:bg-slate-300 sm:px-4">Video</Link>}
+              {video && <Link href={video} target="_blank" className="border border-slate-300 hover:rounded-xl hover:bg-slate-300 px-2 sm:px-4">Video</Link>}
               {studio && <Link href={studio} target="_blank" className="border border-slate-300 hover:rounded-xl hover:bg-slate-300 px-2 sm:px-4">Studio</Link>}
             </div>
           </div>
