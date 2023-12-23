@@ -23,11 +23,13 @@ export default async function Project() {
               <h2 className="text-gray-500 text-xl sm:text-2xl font-bold">{title}</h2>
             </div>
             {description && <p className="mb-2">{description}.</p>}
+            <hr />
             <div className="flex flex-row flex-wrap items-center gap-1 sm:gap-2 mb-2">
               {technologies.map((tech, i) => (
                 <span className="bg-slate-300 hover:bg-indigo-300" key={i}>{tech}</span>
               ))}
             </div>
+            <hr />
             <div className="flex flex-row flex-wrap items-center gap-1 sm:gap-3">
               {live && <Link href={live} target="_blank" className="border border-slate-300 hover:rounded-xl hover:bg-slate-300 px-2 sm:px-4">Live</Link>}
               {github && <Link href={github} target="_blank" className="border border-slate-300 hover:rounded-xl hover:bg-slate-300 px-2 sm:px-4">Github</Link>}
