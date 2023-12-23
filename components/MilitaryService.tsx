@@ -1,5 +1,5 @@
-export default function MilitaryService() {
-  return (
-    <div>MilitaryService</div>
-  )
-}
+// export default function MilitaryService() {
+//   return (
+//     <div>MilitaryService</div>
+//   )
+// }
