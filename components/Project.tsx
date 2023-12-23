@@ -17,15 +17,15 @@ export default async function Project() {
           video,
           studio,
         }, i) => (
-          <div className="border border-slate-700 bg-slate-800 p-2 sm:p-5">
+          <div className="border border-slate-700 bg-slate-800 p-2 sm:p-5" key={i}>
             <div className="flex flex-row items-baseline gap-2 mb-2">
               <span className="text-2xl sm:text-3xl font-bold">{i + 1}.</span>
               <h2 className="text-gray-500 text-xl sm:text-2xl font-bold">{title}</h2>
             </div>
             {description && <p className="mb-2">{description}.</p>}
             <div className="flex flex-row flex-wrap items-center gap-1 sm:gap-2 mb-2">
-              {technologies.map((tech) => (
-                <span className="bg-slate-700 hover:bg-cyan-700">{tech}</span>
+              {technologies.map((tech, i) => (
+                <span className="bg-slate-700 hover:bg-cyan-700" key={i}>{tech}</span>
               ))}
             </div>
             <div className="flex flex-row flex-wrap items-center gap-1 sm:gap-3">
