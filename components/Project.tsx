@@ -18,19 +18,19 @@ export default async function Project() {
           studio,
         }, i) => (
           <div className="border border-slate-300 bg-slate-200 rounded-xl p-2 sm:p-5" key={i}>
-            <div className="flex flex-row items-baseline gap-2 mb-2">
+            <div className="flex flex-row items-baseline gap-2 mb-1">
               <span className="text-2xl sm:text-3xl font-bold">{i + 1}.</span>
               <h2 className="text-gray-500 text-xl sm:text-2xl font-bold">{title}</h2>
             </div>
             {description && <p className="mb-2">{description}.</p>}
-            <hr className="border-red-200"/>
-            <div className="flex flex-row flex-wrap items-center gap-1 sm:gap-2 mb-2">
+            <hr className="border-slate-300"/>
+            <div className="flex flex-row flex-wrap items-center gap-1 sm:gap-2 my-1">
               {technologies.map((tech, i) => (
                 <span className="bg-slate-300 hover:bg-indigo-300" key={i}>{tech}</span>
               ))}
             </div>
-            <hr />
-            <div className="flex flex-row flex-wrap items-center gap-1 sm:gap-3">
+            <hr className="border-slate-300"/>
+            <div className="flex flex-row flex-wrap items-center gap-1 sm:gap-3 mt-1">
               {live && <Link href={live} target="_blank" className="border border-slate-300 hover:rounded-xl hover:bg-slate-300 px-2 sm:px-4">Live</Link>}
               {github && <Link href={github} target="_blank" className="border border-slate-300 hover:rounded-xl hover:bg-slate-300 px-2 sm:px-4">Github</Link>}
               {client && <Link href={client} target="_blank" className="border border-slate-300 hover:rounded-xl hover:bg-slate-300 px-2 sm:px-4">Client</Link>}
