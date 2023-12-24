@@ -26,7 +26,7 @@ export default function Home() {
       <Project />
 
       <div className="flex flex-row items-center justify-between mt-3 pt-2 border-t">
-        <div className="flex flex-row items-center justify-center gap-1 sm:gap-2 mb-3">
+        <div className="flex flex-row items-center justify-center gap-1 sm:gap-2">
           <Link
             href="https://www.linkedin.com/in/melmesery/"
             target="_blank"
