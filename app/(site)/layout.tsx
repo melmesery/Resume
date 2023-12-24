@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 // import { Anuphan as Font } from 'next/font/google'
 // import { Andika as Font } from 'next/font/google'
-// import { Abel as Font } from 'next/font/google'
-import { DM_Mono as Font } from 'next/font/google'
+// import { IBM_Plex_Sans as Font } from 'next/font/google'
+import { Space_Grotesk as Font } from 'next/font/google'
+// import { DM_Mono as Font } from 'next/font/google'
 import '../globals.css'
 
 const font = Font({
@@ -22,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${font.className} bg-slate-100 text-black`}>{children}</body>
+      <body className={`${font.className} text-black`}>{children}</body>
     </html>
   )
 }
