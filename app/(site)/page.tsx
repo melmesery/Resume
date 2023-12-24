@@ -13,10 +13,10 @@ export default function Home() {
       <h1 className="w-fit mx-auto text-base sm:text-xl bg-slate-200 px-2 rounded-full mb-3 sm:mb-5 font-bold">
         Portfolio Projects Sources
       </h1>
-      <p className="font-bold mb-3">
+      <p className="mb-3">
         For any needed authentication, Please use these credentials to login:
       </p>
-      <div className="border-l-2 border-slate-300 p-1 sm:p-3 font-bold">
+      <div className="border-l-2 border-slate-300 p-1 sm:p-3">
         <p className="mb-1 text-sm sm:text-base">
           Email: mohamed1elmesery@gmail.com
         </p>
