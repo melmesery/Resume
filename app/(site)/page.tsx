@@ -16,7 +16,7 @@ export default function Home() {
       <p className="mb-3">
         For any needed authentication, Please use these credentials to login:
       </p>
-      <div className="border-l-2 border-slate-300 p-1 sm:p-3">
+      <div className="border-l-2 border-slate-300 p-1">
         <p className="mb-1 text-sm sm:text-base">
           Email: mohamed1elmesery@gmail.com
         </p>

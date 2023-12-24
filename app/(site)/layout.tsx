@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 // import { Anuphan as Font } from 'next/font/google'
 // import { Andika as Font } from 'next/font/google'
 // import { IBM_Plex_Sans as Font } from 'next/font/google'
-import { Space_Grotesk as Font } from 'next/font/google'
-// import { DM_Mono as Font } from 'next/font/google'
+// import { Space_Grotesk as Font } from 'next/font/google'
+import { Sen as Font } from 'next/font/google'
 import '../globals.css'
 
 const font = Font({
