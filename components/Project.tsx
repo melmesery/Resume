@@ -28,7 +28,7 @@ export default async function Project() {
                 <span className="bg-slate-300 hover:bg-indigo-300" key={i}>{tech}</span>
               ))}
             </div>
-            <hr className="w-[60%] mx-auto my-2 border-slate-100" />
+            <hr className="w-[60%] my-2 border-slate-100" />
             <div className="flex flex-row flex-wrap items-center gap-1 mt-1">
               {live && <Link href={live} target="_blank" className="border border-slate-300 hover:rounded-xl hover:bg-slate-300 px-2 sm:px-4">Live</Link>}
               {github && <Link href={github} target="_blank" className="border border-slate-300 hover:rounded-xl hover:bg-slate-300 px-1 sm:px-2">Github</Link>}
