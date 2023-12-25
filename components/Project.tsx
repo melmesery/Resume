@@ -4,7 +4,7 @@ import { getProjects } from "../sanity/sanity-utils.ts";
 export default async function Project() {
   const { projects } = await getProjects();
   return (
-    <div className="grid grid-cols-2 xl:grid-cols-3 gap-1 mt-3">
+    <div className="grid grid-cols-1 xl:grid-cols-3 gap-1 mt-3">
       {projects?.map(
         (
           {
