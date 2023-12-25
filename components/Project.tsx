@@ -4,7 +4,7 @@ import { getProjects } from "../sanity/sanity-utils.ts";
 export default async function Project() {
   const { projects } = await getProjects();
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-4 gap-1 mt-3">
+    <div className="grid grid-cols-1 xl:grid-cols-3 gap-1 mt-3">
       {projects?.map(
         (
           {
@@ -21,9 +21,9 @@ export default async function Project() {
           i
         ) => (
           <div key={i}>
-            <div className="border border-slate-300 bg-slate-200 rounded-xl p-2 sm:p-3">
+            <div className="border border-slate-300 shadow-md p-2">
               <div className="flex flex-row items-baseline gap-1">
-                <span className="text-2xl text-gray-500 font-bold">{i + 1}.</span>
+                <span className=" text-gray-500 font-bold">{i + 1}.</span>
                 <h2 className="text-xl font-bold">
                   {title}
                 </h2>
@@ -31,7 +31,7 @@ export default async function Project() {
               {description && <p className="my-2">{description}.</p>}
               <div className="flex flex-row flex-wrap items-center gap-1 my-1">
                 {technologies.map((tech, i) => (
-                  <span className="bg-slate-300 rounded-xl px-2" key={i}>
+                  <span className="bg-slate-100 px-1" key={i}>
                     {tech}
                   </span>
                 ))}
@@ -42,7 +42,7 @@ export default async function Project() {
                 <Link
                   href={live}
                   target="_blank"
-                  className="border border-slate-300 rounded-xl hover:bg-slate-300 px-2 sm:px-4"
+                  className="border border-slate-200 rounded-xl bg-slate-100 hover:bg-white px-2 sm:px-4"
                 >
                   Live
                 </Link>
@@ -51,7 +51,7 @@ export default async function Project() {
                 <Link
                   href={github}
                   target="_blank"
-                  className="border border-slate-300 rounded-xl hover:bg-slate-300 px-1 sm:px-2"
+                  className="border border-slate-200 rounded-xl bg-slate-100 hover:bg-white px-1 sm:px-2"
                 >
                   Github
                 </Link>
@@ -60,7 +60,7 @@ export default async function Project() {
                 <Link
                   href={client}
                   target="_blank"
-                  className="border border-slate-300 rounded-xl hover:bg-slate-300 px-1 sm:px-2"
+                  className="border border-slate-200 rounded-xl bg-slate-100 hover:bg-white px-1 sm:px-2"
                 >
                   Client
                 </Link>
@@ -69,7 +69,7 @@ export default async function Project() {
                 <Link
                   href={server}
                   target="_blank"
-                  className="border border-slate-300 rounded-xl hover:bg-slate-300 px-1 sm:px-2"
+                  className="border border-slate-200 rounded-xl bg-slate-100 hover:bg-white px-1 sm:px-2"
                 >
                   Server
                 </Link>
@@ -78,7 +78,7 @@ export default async function Project() {
                 <Link
                   href={video}
                   target="_blank"
-                  className="border border-slate-300 rounded-xl hover:bg-slate-300 px-1 sm:px-2"
+                  className="border border-slate-200 rounded-xl bg-slate-100 hover:bg-white px-1 sm:px-2"
                 >
                   Video
                 </Link>
@@ -87,7 +87,7 @@ export default async function Project() {
                 <Link
                   href={studio}
                   target="_blank"
-                  className="border border-slate-300 rounded-xl hover:bg-slate-300 px-1 sm:px-2"
+                  className="border border-slate-200 rounded-xl bg-slate-100 hover:bg-white px-1 sm:px-2"
                 >
                   Studio
                 </Link>

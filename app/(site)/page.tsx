@@ -9,8 +9,8 @@ import {
 
 export default function Home() {
   return (
-    <div className="max-w-[90%] sm:max-w-[60%] mx-auto py-5">
-      <h1 className="w-fit text-base sm:text-xl bg-slate-200 px-2 rounded-full mb-3 sm:mb-5 font-bold">
+    <div className="max-w-[90%] sm:max-w-[50%] mx-auto py-5">
+      <h1 className="w-fit bg-slate-200 px-2 mb-3 sm:mb-5 font-bold">
         Portfolio Projects Sources
       </h1>
       <p className="mb-3">
@@ -57,7 +57,7 @@ export default function Home() {
           </Link>
         </div>
         <span className="text-xs sm:text-base">
-          All Rights Reserved © Mohamed Elmesery
+          Mohamed Elmesery © {new Date().getFullYear()}
         </span>
       </div>
     </div>

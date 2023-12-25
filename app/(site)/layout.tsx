@@ -1,5 +1,6 @@
 import type { Metadata } from 'next' 
-import { Sen as Font } from 'next/font/google'
+// import { Sen as Font } from 'next/font/google'
+import { Padauk as Font } from 'next/font/google'
 import '../globals.css'
 
 const font = Font({
