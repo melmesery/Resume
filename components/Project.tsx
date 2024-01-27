@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { getProjects } from "../sanity/sanity-utils.ts";
 
+export const revalidate = 10;
+
 export default async function Project() {
   const { projects } = await getProjects();
   return (
